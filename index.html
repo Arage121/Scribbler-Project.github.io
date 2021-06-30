@@ -6,16 +6,74 @@
     <!-- TODO: Include Google Fonts file here -->
     <link rel="stylesheet" href="./styles/index.css" type="text/css">
     <link rel="stylesheet" href="./styles/font.css" type="text/css">
+    <link rel="stylesheet" href="./css/header.css" type="text/css">
 </head>
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
-    <div id="header">
-        <input class="topButtons" type="button" value="Sign Up">
-        <input class="topButtons" type="button" value="Sign In">
+    <div class="header">
+        <input onclick="document.getElementById('id01').style.display='block'" style="width:auto;" 
+         class="topButtons" type="button" value="Sign Up">
+        <input onclick="document.getElementById('id02').style.display='block'" style="width:auto;"   
+        class="topButtons" type="button" value="Sign In">
         <a id="pageTitle" class="logo-title">ScriBBler</a>
         <p class="middleText">Explore, Imagine, Create</p>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+              <div class="container">
+                <h1 style="align-items: center;">Get Started</h1>
+                <hr>
+                <label for="name"><b>Full Name</b></label>
+                <input type="text" placeholder="Enter Full Name" name="fullName" required>
+          
+                <label for="name"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="fullName" required>
+                
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+          
+                <label for="psw-repeat"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+          
+                <div class="clearfix">
+                  <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div id="id02" class="modal">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+              <div class="container">
+                <h1 style="align-items: center;">Welcome Back!</h1>
+                <hr>
+                <label for="name"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="fullName" required>
+                
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+          
+          <p><b>Not a member?</b> <a href="" style="color:dodgerblue">Sign Up</a>.</p>
+          
+                <div class="clearfix">
+                  <button type="submit" class="signupbtn">Sign In</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="none">
+              <span>
+                  <input type="button" value="All posts">
+                  
+                 <input type="button" value="Create Post"> 
+                  
+              </span>
+          </div>
     </div>
+    <script src="./js/header.js">
+       
+        </script>
 </body>
 
 </html>
