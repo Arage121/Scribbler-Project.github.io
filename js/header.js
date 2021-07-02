@@ -1,18 +1,19 @@
- // Get the modal
- var modal = document.getElementById('id01');
-        
- // When the user clicks anywhere outside of the modal, close it
- window.onclick = function(event) {
-   if (event.target == modal) {
-     modal.style.display = "none";
-   }
- }
+function showSignInModal(){
+  var modal = document.getElementById("signin-modal");
+  modal.style.display = "flex";
+}
 
- var modal = document.getElementById('id02');
- 
- // When the user clicks anywhere outside of the modal, close it
- window.onclick = function(event) {
-   if (event.target == modal) {
-     modal.style.display = "none";
-   }
- }
+function hideSignInModal(){
+  var modal = document.getElementById("signin-modal");
+  modal.style.display = "none";
+}
+
+function showSignUpModal(){
+  var modal = document.getElementById("signup-modal");
+  modal.style.display = "flex";
+}
+
+function hideSignUpModal(){
+  var modal = document.getElementById("signup-modal");
+  modal.style.display = "none";
+}
