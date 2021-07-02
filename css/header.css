@@ -93,6 +93,7 @@ input {
 }
 
 .close {
+  font-size: xx-large;
   display: flex;
   align-self: flex-end;
   cursor: pointer;
